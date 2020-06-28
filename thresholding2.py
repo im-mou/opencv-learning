@@ -7,7 +7,7 @@ def tb_cb(x):
 img = cv.imread('sudoku.png', 0)
 
 cv.namedWindow('params')
-cv.createTrackbar('maxValue', 'params', 0, 255, tb_cb)
+cv.createTrackbar('maxValue', 'params', 255, 255, tb_cb)
 cv.createTrackbar('blockSize', 'params', 11, 256, tb_cb)
 cv.createTrackbar('constant', 'params', 0, 512, tb_cb)
 
