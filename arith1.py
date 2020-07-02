@@ -2,8 +2,8 @@ import cv2 as cv
 import numpy as np
 
 
-img = cv.imread('lena.jpg')
-img2 = cv.imread('opencv-logo-white.png')
+img = cv.imread('images/lena.jpg')
+img2 = cv.imread('images/opencv-logo-white.png')
 
 print(img.shape)
 print(img.size)

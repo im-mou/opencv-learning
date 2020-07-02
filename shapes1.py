@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('lena.jpg', -1)
+img = cv.imread('images/lena.jpg', -1)
 
 # img = np.zeros([512, 512, 3], dtype=np.uint8)
 

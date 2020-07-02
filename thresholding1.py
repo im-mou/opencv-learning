@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('gradient.png', 0)
+img = cv.imread('images/gradient.png', 0)
 
 # binary threshold -> either 0 if blow min value and max value if above min
 _, th_binary = cv.threshold(img, 127, 255, cv.THRESH_BINARY)

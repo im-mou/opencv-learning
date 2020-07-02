@@ -1,6 +1,6 @@
 import cv2 as cv
 
-img = cv.imread('lena.jpg', -1)
+img = cv.imread('images/lena.jpg', -1)
 
 cv.imshow('image', img)
 k = cv.waitKey(0) & 0xFF

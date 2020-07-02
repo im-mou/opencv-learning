@@ -17,7 +17,7 @@ def click_event(event, x, y, flags, params):
         cv.imshow('colorWindow', cimg)
 
 # img = np.zeros([512, 513, 3], dtype=np.uint8)
-img = cv.imread('lena.jpg', 1)
+img = cv.imread('images/lena.jpg', 1)
 cv.imshow('image', img)
 points = []
 cv.setMouseCallback('image', click_event)

@@ -1,7 +1,7 @@
 import cv2 as cv
 import matplotlib.pyplot as plt
 
-img = cv.imread('lena.jpg', -1)
+img = cv.imread('images/lena.jpg', -1)
 
 cv.imshow('image', img)
 

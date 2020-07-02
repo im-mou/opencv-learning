@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv.imread('lena.jpg')
+img = cv.imread('images/lena.jpg')
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 
 # create kernel => k = kMatrix / (k_h * k_w)

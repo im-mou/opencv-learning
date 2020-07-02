@@ -4,7 +4,7 @@ import numpy as np
 img1 = np.zeros((250, 500, 3), np.uint8)
 img1 = cv.rectangle(img1, (200, 0), (300, 100), (255, 255, 255), -1)
 
-img2 = cv.imread("lena.jpg")
+img2 = cv.imread("images/lena.jpg")
 img2 = cv.resize(img2, (500, 250))
 
 

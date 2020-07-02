@@ -4,7 +4,7 @@ import numpy as np
 def tb_cb(x):
     pass
 
-img = cv.imread('sudoku.png', 0)
+img = cv.imread('images/sudoku.png', 0)
 
 cv.namedWindow('params')
 cv.createTrackbar('maxValue', 'params', 255, 255, tb_cb)

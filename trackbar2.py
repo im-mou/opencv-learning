@@ -13,7 +13,7 @@ switch = 'color/gray'
 cv.createTrackbar(switch, 'image', 0, 1, tb_cb)
 
 while True:
-    img = cv.imread('lena.jpg')
+    img = cv.imread('images/lena.jpg')
     pos = cv.getTrackbarPos('CP', 'image')
     font = cv.FONT_HERSHEY_SIMPLEX
     cv.putText(img, str(pos), (15, 150), font, 4, (0, 0, 255))
