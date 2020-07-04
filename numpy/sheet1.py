@@ -87,7 +87,8 @@ a = arange(10)**3
 # _p(a[2:5])
 
 
-# a[:6:2] = -1000 # a[0:6:2] = -1000; from start to position 6, exclusive, set every 2nd element to -1000
+# a[0:6:2] = -1000; from start to position 6, exclusive, set every 2nd element to -1000
+# a[:6:2] = -1000 
 # _p(a)
 
 # _p(a[::-1])
@@ -143,6 +144,7 @@ _p(row_stack((a,b)))
 _p(column_stack((a[:, newaxis], b[:, newaxis])))
 _p(vstack((a[..., newaxis], b[..., newaxis])))
 
+
 # Copies and views
 
 a = arange(12).reshape(3, 4)
@@ -161,3 +163,25 @@ _p(a)
 # Deep copy, create a new independent object
 d = a.copy()
 _p(d.base is a)
+
+# linear algebra
+
+# cross product
+v1 = array([-5,0])
+v2 = array([0,-5])
+
+_p(cross(v1, v2))
+
+# cumulative product
+a = array([1,2,3,4,5,6])
+b = array([[1,2,3,4,5,6], [1,2,3,4,5,6]])
+
+_p(a.cumprod())
+_p(b.cumprod(axis=0))
+_p(b.cumprod(axis=1))
+
+# dot product
+_p("==========")
+v1 = array([2,2])
+v2 = array([1,2])
+_p(v1*v2)
