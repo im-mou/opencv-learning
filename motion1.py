@@ -44,7 +44,7 @@ while cap.isOpened():
         cv.rectangle(frame1, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
         # put text if there is movement
-        cv.putText(frame1, "Status: ()".format('Movement'), (10, 20),
+        cv.putText(frame1, "Movement", (10, 20),
                    cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
     cv.imshow("video", frame1)
